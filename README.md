@@ -14,7 +14,7 @@ This project implements a **cloud-native chatbot** that:
 
 ##  Architecture Overview
 ```mermaid
-flowchart TD
+flowchart ID
     A[User] --> B[Chatbot UI]
     B --> C[Backend (FastAPI)]
     C --> D[Intent Detection (Vertex AI or Dialogflow CX)]
@@ -57,7 +57,7 @@ c. GitHub repository for CI/CD.
 ---
 
 ## 2. Clone Repo
-bash
+```bash
 git clone https://github.com/yourusername/customer-support-bot.git
 cd customer-support-bot
 ---
@@ -71,24 +71,27 @@ b. Salesforce: Insert Connected App credentials in salesforce_api.py
 c. Frontend: Update Cloud Run URL in frontend/chatbot.js
 ---
 
-5. Containerization
-bash
+## 5. Containerization
+```bash
 docker build -t support-bot .
 docker tag support-bot gcr.io/PROJECT_ID/support-bot
 docker push gcr.io/PROJECT_ID/support-bot
-6. Deploy to Cloud Run
-bash
+---
+## 6. Deploy to Cloud Run
+```bash
 gcloud run deploy support-bot \
   --image gcr.io/PROJECT_ID/support-bot \
   --platform managed \
   --region us-central1 \
   --allow-unauthenticated
-7. CI/CD Setup
+---
+## 7. CI/CD Setup
 Add GCP service account key as GitHub secret GCP_CREDENTIALS.
 
 GitHub Actions workflow (ci-cd/deploy.yml) automates build & deploy.
+---
 
-🧪 Testing
+ Testing
 Open frontend/index.html in browser.
 
 Ask a basic query:
