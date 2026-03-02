@@ -1,7 +1,7 @@
-# Smart-Customer-Support-Bot-with-Escalation
+## Smart-Customer-Support-Bot-with-Escalation
 Smart Customer Support Bot with Escalation   A cloud-native chatbot built with FastAPI, Dialogflow CX, and Salesforce API integration. The bot handles basic customer queries using an FAQ knowledge base and escalates complex issues to human agents, automatically logging structured case details in Salesforce.
 
-#  Smart Customer Support Bot with Escalation
+##  Smart Customer Support Bot with Escalation
 
 ##  Project Concept
 This project implements a **cloud-native chatbot** that:
@@ -56,14 +56,14 @@ a. Salesforce Developer Org (sandbox) for API integration
 c. GitHub repository for CI/CD.
 ---
 
-2. Clone Repo
+## 2. Clone Repo
 bash
 git clone https://github.com/yourusername/customer-support-bot.git
 cd customer-support-bot
 ---
 
-3. Install Dependencies
-bash
+## 3. Install Dependencies
+```bash
 pip install -r requirements.txt
 4. Configure Environment
 a. Dialogflow/Vertex AI: Add project ID and endpoint details in dialogflow_handler.py or vertex_ai_handler.py.
