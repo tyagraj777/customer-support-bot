@@ -1,0 +1,8 @@
+rules:
+  - keyword: "refund"
+    escalate: true
+  - keyword: "error"
+    escalate: true
+  - keyword: "status"
+    escalate: false
+	

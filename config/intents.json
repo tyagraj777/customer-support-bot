@@ -1,0 +1,4 @@
+[
+  { "intent": "basic_query", "examples": ["What is my case status?", "How do I reset my password?"] },
+  { "intent": "complex_query", "examples": ["I need a refund", "My account shows an error"] }
+]
